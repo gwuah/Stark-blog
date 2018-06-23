@@ -20,7 +20,8 @@
   margin: em(30) 0;
   .container {
     flex-flow: column;
-    & > div {
+    & > div,
+    button {
       margin-bottom: em(10);
     }
     .image {
@@ -50,9 +51,41 @@
       width: em(100);
       height: em(34);
       margin-bottom: em(10);
+      margin-top: em(10);
       cursor: pointer;
       border-radius: 2px;
       box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+.content {
+  // outline: 1px solid $primary;
+  margin-top: em(50);
+  width: em(790);
+  .post {
+    // & > div {
+    //   outline: 1px solid red;
+    // }
+
+    outline: 1px solid red;
+    margin: em(30) 0;
+    cursor: pointer;
+
+    .post-title {
+      font-size: em(30);
+      margin-bottom: em(5);
+      color: $black;
+
+      &:hover {
+        color: $primary;
+        cursor: pointer;
+      }
+    }
+    .post-about {
+      outline: 1px solid $primary;
+      font-size: em(18);
+      width: em(600);
     }
   }
 }
