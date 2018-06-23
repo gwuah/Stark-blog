@@ -59,13 +59,14 @@
 }
 
 .content {
-  outline: 1px solid $primary;
-  margin-top: em(50);
+  margin-top: em(20);
   width: em(790);
-  .post {
-    margin: em(30) 0;
-    cursor: pointer;
 
+  & > div {
+    margin: em(50) 0;
+  }
+  .post {
+    cursor: pointer;
     .post-title {
       font-size: em(30);
       margin-bottom: em(5);
@@ -81,13 +82,24 @@
     }
 
     .post-social {
-      outline: 1px solid $primary;
       display: flex;
-      justify-content: flex-end;
+      justify-content: flex-start;
+      align-items: center;
       & > div {
-        outline: 1px solid $primary;
-        margin: em(5) em(10);
+        margin: em(15) em(0);
       }
+      .tag {
+        text-transform: lowercase;
+        color: $accent;
+        margin-right: em(10);
+        font-size: em(15);
+      }
+    }
+
+    .post-time {
+      margin-top: em(15);
+      font-size: em(15);
+      color: lighten($color: $grey, $amount: 25);
     }
   }
 }
