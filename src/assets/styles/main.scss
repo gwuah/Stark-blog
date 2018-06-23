@@ -6,8 +6,53 @@
   padding: 0;
   font-family: "jessy";
   color: $grey;
+  // outline: 1px solid $primary;
 }
 
 .container {
-  outline: 1px solid red;
+  // outline: 1px solid $primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  margin: em(30) 0;
+  .container {
+    flex-flow: column;
+    & > div {
+      margin-bottom: em(10);
+    }
+    .image {
+      padding-top: em(20);
+      img {
+        width: em(60);
+        height: em(60);
+        border-radius: em(50);
+      }
+    }
+    .name {
+      font-size: em(20);
+      color: $black;
+    }
+    .about {
+      font-size: em(15);
+      span {
+        color: $accent;
+      }
+    }
+
+    button {
+      // outline: 1px solid red;
+      color: white;
+      background: $primary;
+      border: 0;
+      width: em(100);
+      height: em(34);
+      margin-bottom: em(10);
+      cursor: pointer;
+      border-radius: 2px;
+      box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+    }
+  }
 }
