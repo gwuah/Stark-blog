@@ -1,0 +1,13 @@
+@import "base";
+@import "em";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "jessy";
+  color: $grey;
+}
+
+.container {
+  outline: 1px solid red;
+}
