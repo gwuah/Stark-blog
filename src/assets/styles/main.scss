@@ -60,7 +60,7 @@
 
 .content {
   margin-top: em(20);
-  width: em(790);
+  width: em(690);
 
   & > div {
     margin: em(50) 0;
@@ -102,4 +102,9 @@
       color: lighten($color: $grey, $amount: 25);
     }
   }
+}
+
+.footer {
+  margin: em(20) 0;
+  font-size: em(15);
 }

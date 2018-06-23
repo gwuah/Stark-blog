@@ -5,7 +5,7 @@
               <img src="../assets/images/img.jpg" alt="" srcset="">
             </div>
             <div class="name">Griffith Awuah</div>
-            <div class="about">FullStack <span> Javacript </span> devloper</div>
+            <div class="about">FullStack <span> Javascript </span> devloper</div>
             <button> Follow </button>
           </div>
     </div>
