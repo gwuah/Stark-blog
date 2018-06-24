@@ -1,12 +1,17 @@
 @import "base";
 @import "em";
 
+
+
 * {
   margin: 0;
   padding: 0;
-  font-family: "jessy";
-  color: $grey;
-  // outline: 1px solid $primary;
+  font-family: Mina !important;
+  text-align: center !important;
+}
+
+body {
+  background-image: url(http://jester.netlify.com/static/media/01.0277c785.png);
 }
 
 .container {
@@ -16,7 +21,7 @@
 }
 
 .main {
-  margin: em(30) 0;
+  margin: em(60) 0 0 0 ;
   .container {
     flex-flow: column;
     & > div,
@@ -26,8 +31,8 @@
     .image {
       padding-top: em(20);
       img {
-        width: em(60);
-        height: em(60);
+        width: em(100);
+        height: em(100);
         border-radius: em(50);
         box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
       }
@@ -59,7 +64,6 @@
 }
 
 .content {
-  margin-top: em(20);
   width: em(690);
 
   & > div {
@@ -79,6 +83,7 @@
     .post-about {
       font-size: em(18);
       width: em(600);
+      color: $grey;
     }
 
     .post-social {
@@ -97,7 +102,6 @@
     }
 
     .post-time {
-      margin-top: em(15);
       font-size: em(15);
       color: lighten($color: $grey, $amount: 25);
     }
